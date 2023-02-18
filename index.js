@@ -7,7 +7,7 @@ const wrapper = document.querySelector(".wrapper"),
   wIcon = wrapper.querySelector(".weather-part img"),
   btnBack = wrapper.querySelector("header i");
 
-const apiKey = "02c2f17449b88af15848c2d5de76e154";
+const apiKey = "eae716dc50073d95e2f23037e30a6283";
 let api;
 
 inputField.addEventListener("keyup", (e) => {
