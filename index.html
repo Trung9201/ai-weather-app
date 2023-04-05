@@ -12,56 +12,49 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <i class="bx bx-left-arrow-alt"></i>
-        Weather App
-      </header>
-
-      <section class="input-part">
-        <p class="info-txt"></p>
-        <input type="text" placeholder="Nhập tên thành phố" />
-        <p class="input-line"></p>
-        <button>Vị trí hiện tại</button>
-      </section>
-
-      <section class="weather-part">
-        <img src="#" alt="" />
-        <div class="temp">
-          <span class="numb">_</span>
-          <span class="deg">°</span>
-          C
+    <div class="container">
+      <h2>Weather App</h2>
+      <div class="input-city">
+        <input id="input-city" type="text" placeholder="Enter City" />
+        <i id="btn-search" class="bx bx-search" id="btn-search"></i>
+      </div>
+      <div class="text-error"></div>
+      <div class="city">
+        <i id="location" class="bx bx-current-location"></i
+        ><span class="city-name"> __, __</span>
+      </div>
+      <div class="info-weather">
+        <div class="weather-left">
+          <img id="img-icon" src="./icons/clear.svg" alt="">
+          <div class="temp" style="display: flex; justify-content: center; font-size: 26px;">
+            <span class="temperature">_</span>
+            <span class="deg">°</span>
+            C
+          </div>
         </div>
-        <div class="weather">_ _</div>
-        <div class="location">
-          <i class="bx bxs-map"></i>
-          <span>_, _</span>
-        </div>
-        <div class="bottom-details">
+        <div class="weather-right">
           <div class="column feels">
-            <i class="bx bxs-thermometer"></i>
+            <i id="icon" class="bx bxs-thermometer"></i>
             <div class="details">
               <div class="temp">
-                <span class="numb">_</span>
+                <span class="numb-temperature">_</span>
                 <span class="deg">°</span>C
               </div>
               <p>Nhiệt độ</p>
             </div>
           </div>
           <div class="column humidity">
-            <i class="bx bxs-droplet-half"></i>
+            <i id="icon" class="bx bxs-droplet-half"></i>
             <div class="details">
               <div class="temp">
-                <span class="numb">_</span>
-                <span class="deg">°</span>C
+                <span class="numb doam">_</span>%
               </div>
-              <p>Độ </p>
+              <p>Độ ẩm</p>
             </div>
-          </div>
         </div>
-      </section>
+      </div>
     </div>
 
-    <script src="/weather-app/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
